@@ -2,4 +2,5 @@
     <string name="app_name">my first app</string>
     <string name="hi">hello</string>
     <string name="top">top</string>
+    <string name="button_text">button text</string>
 </resources>
