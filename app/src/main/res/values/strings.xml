@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">my first app</string>
+    <string name="hi">hi</string>
+    <string name="top">top</string>
+</resources>
