@@ -5,30 +5,101 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#8E4F4F"
+    android:backgroundTint="#FFFFFF"
     android:rotation="0"
     android:scaleX="1"
     android:scaleY="1"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/centerTextView"
+    <Button
+        android:id="@+id/gainButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#E60000"
+        android:text="Click me for gold!"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/goldDisplay" />
 
-    <Button
-        android:id="@+id/button0001"
+    <TextView
+        android:id="@+id/goldDisplay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#E60000"
-        android:text="change"
+        android:text="0"
+        android:textScaleX="1"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.369" />
+        app:layout_constraintVertical_bias="0.159" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="SHOP"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gainButton" />
+
+    <TextView
+        android:id="@+id/incrementDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Per click: 1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goldDisplay" />
+
+    <Button
+        android:id="@+id/upgrade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cost: 50 | Gold per click +1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/upgrade2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cost: 400 | Gold per click +5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upgrade" />
+
+    <Button
+        android:id="@+id/upgrade3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cost: 1250 | Gold per click +12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upgrade2" />
+
+    <Button
+        android:id="@+id/upgrade4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cost: 7000 | Gold per click +55"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upgrade3" />
+
+    <Button
+        android:id="@+id/upgrade5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cost: 35000 | Gold per click +220"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upgrade4" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
